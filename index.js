@@ -237,7 +237,7 @@ HashRing.prototype.hash = function hash(key) {
  * @api private
  */
 HashRing.prototype.digest = function digest(key) {
-  var hash = this.hash(key +'');
+  var hash = this.hash(key);
 
   // Support for Node 0.10 which returns buffers so we don't need charAt
   // lookups.
